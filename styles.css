@@ -85,31 +85,48 @@ main {
     width: 25%;
     border:1px solid black;
     background-color: rgb(185, 185, 190);
-     background-image: url(https://www.recipetineats.com/wp-content/uploads/2020/08/My-best-Vanilla-Cake_9-SQ.jpg?w=500&h=500&crop=1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+     /* background-image: url(https://www.recipetineats.com/wp-content/uploads/2020/08/My-best-Vanilla-Cake_9-SQ.jpg?w=500&h=500&crop=1); */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
 }
 
+.foto  {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
 
-.box:hover {
+.tekstas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
     color: white;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s;
 }
 
-.boxx {
 
-    height: 100%;
-    background: rgba(157, 114, 114, 0.39);
-    background: linear-gradient(0deg, rgba(157, 114, 114, 0.329) 0%, rgba(213, 24, 24, 0.308) 100%);
-    padding: 20px;
-    display: none;
 
+.tekstas:hover {
+    opacity: 1;
 }
 
-.boxx:hover {
- 
+.pavadimas {
+    font-size: 2rem;
+    font-weight: bold;
 }
 
-img {
-    height: 100%;
-    width: 100%;}
+.description {
+    font-size: 1.25em;
+    margin-top: 20px;
+}
